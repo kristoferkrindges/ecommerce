@@ -5,6 +5,9 @@ import { darkTheme, lightTheme } from "../../styles/theme";
 import { GlobalStyle } from "../../styles/global";
 import { LanguageProvider } from "../../contexts/language";
 import { DarkModeProvider } from "../../contexts/darkmode";
+import TopSideMenu from "@/app/components/menus/topside";
+import TopSideMenuTeste from "@/app/components/menus/topside/topside";
+import PromotionCard from "@/app/components/features/products/promotion";
 
 interface ThemeContextProps {
 	setTheme: React.Dispatch<React.SetStateAction<string>>;
@@ -33,7 +36,13 @@ export default function ThemeProvider() {
 				<GlobalStyle />
 				<LanguageProvider>
 					<DarkModeProvider>
-						<h1>Oi</h1>
+						<TopSideMenuTeste />
+						<PromotionCard
+							image={"https://imgcentauro-a.akamaihd.net/768x768/96274331.jpg"}
+							name={"Nike collection"}
+							before={"159.00"}
+							after={"99.99"}
+						/>
 						{/* Routes */}
 					</DarkModeProvider>
 				</LanguageProvider>
