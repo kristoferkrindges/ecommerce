@@ -8,19 +8,22 @@ export const Card = styled.article`
 	padding: 1.5rem 2rem;
 	border-radius: 2rem;
 	overflow: hidden;
-	width: 300px;
+	/* width: 300px; */
+	width: 36rem;
+	height: 42rem;
+	background-color: white;
 
-	&:hover {
+	/* &:hover {
 		box-shadow: 0 0.5rem 1rem black;
-	}
+	} */
 `;
 
 export const CardImage = styled.div`
-	width: 180px;
+	width: 100%;
 	height: auto;
 	margin-bottom: 0.5rem;
 	cursor: pointer;
-	/* padding: 1.5rem 0; */
+	padding: 1.5rem 0;
 `;
 
 export const ProductImage = styled.img`

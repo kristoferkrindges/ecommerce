@@ -31,8 +31,6 @@ export const GlobalStyle = createGlobalStyle`
     }
     ::-webkit-scrollbar-thumb{
       border-radius: 10px;
-      /* background-image: linear-gradient(${({ theme }) =>
-				theme.container}, ${({ theme }) => theme.secondColor}); */
-      background-color: ${({ theme }) => theme.secondColor};
+      background-color: ${({ theme }) => theme.text};
     }
 `;

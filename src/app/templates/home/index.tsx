@@ -1,47 +1,18 @@
 import React from "react";
 
-import {
-	Card,
-	CardImage,
-	ProductImage,
-	CardName,
-	ProductName,
-	CardPrecis,
-	PricesContainer,
-	PriceBefore,
-	PriceAfter,
-} from "./style";
-import { CartIcon, FavIcon } from "@/app/icons/IO5";
+import { MainContainer, SecondaryContainer } from "./style";
+import PromotionSection from "./promotionSection";
 
-interface PromotionCardProps {
+interface HomeTemplateProps {
 	image: string;
-	name: string;
-	before: string | number;
-	after: string | number;
 }
 
-export default function HomeTemplate({
-	image,
-	name,
-	before,
-	after,
-}: PromotionCardProps) {
+export default function HomeTemplate({}: HomeTemplateProps) {
 	return (
-		<Card>
-			<CardImage>
-				<ProductImage src={image} />
-			</CardImage>
-			<CardName>
-				<ProductName>{name}</ProductName>
-			</CardName>
-			<CardPrecis>
-				<FavIcon />
-				<PricesContainer>
-					<PriceBefore>${before}</PriceBefore>
-					<PriceAfter>${after}</PriceAfter>
-				</PricesContainer>
-				<CartIcon />
-			</CardPrecis>
-		</Card>
+		<MainContainer>
+			<SecondaryContainer>
+				<PromotionSection image={""} />
+			</SecondaryContainer>
+		</MainContainer>
 	);
 }

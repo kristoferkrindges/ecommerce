@@ -15,14 +15,15 @@ export const Container = styled.div`
 	align-items: center;
 	justify-content: space-between;
 	background: ${({ theme }) => theme.container};
+	background: white;
 	border-radius: 0 0 2rem 2rem;
-	border-bottom: 10px solid ${({ theme }) => theme.bottom};
-	border-right: 10px solid ${({ theme }) => theme.bottom};
-	border-left: 10px solid ${({ theme }) => theme.bottom};
+	border-bottom: 10px solid ${({ theme }) => theme.background};
+	border-right: 10px solid ${({ theme }) => theme.background};
+	border-left: 10px solid ${({ theme }) => theme.background};
 `;
 
 export const Log = styled.h2`
-	color: ${({ theme }) => theme.textInverse};
+	color: ${({ theme }) => theme.text};
 `;
 
 export const OptionsIcons = styled.div`
@@ -32,7 +33,7 @@ export const OptionsIcons = styled.div`
 
 	svg {
 		font-size: 2rem;
-		color: ${({ theme }) => theme.textInverse};
+		color: ${({ theme }) => theme.text};
 		cursor: pointer;
 		transition: color 0.2s ease-in-out;
 	}

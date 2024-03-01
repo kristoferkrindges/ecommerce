@@ -8,6 +8,7 @@ import { DarkModeProvider } from "../../contexts/darkmode";
 import TopSideMenu from "@/app/components/menus/topside";
 import TopSideMenuTeste from "@/app/components/menus/topside/topside";
 import PromotionCard from "@/app/components/features/products/promotion";
+import HomeTemplate from "@/app/templates/home";
 
 interface ThemeContextProps {
 	setTheme: React.Dispatch<React.SetStateAction<string>>;
@@ -37,12 +38,7 @@ export default function ThemeProvider() {
 				<LanguageProvider>
 					<DarkModeProvider>
 						<TopSideMenuTeste />
-						<PromotionCard
-							image={"https://imgcentauro-a.akamaihd.net/768x768/96274331.jpg"}
-							name={"Nike collection"}
-							before={"159.00"}
-							after={"99.99"}
-						/>
+						<HomeTemplate image={""} />
 						{/* Routes */}
 					</DarkModeProvider>
 				</LanguageProvider>
