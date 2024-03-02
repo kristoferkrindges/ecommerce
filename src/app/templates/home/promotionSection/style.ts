@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SectionContainer = styled.section`
 	width: 100%;
-	height: 96vh;
+	height: 98vh;
 	padding: 5rem 1rem 1rem 1rem;
 `;
 

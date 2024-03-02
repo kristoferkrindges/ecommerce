@@ -15,7 +15,6 @@ export const Container = styled.div`
 	align-items: center;
 	justify-content: space-between;
 	background: ${({ theme }) => theme.container};
-	background: white;
 	border-radius: 0 0 2rem 2rem;
 	border-bottom: 10px solid ${({ theme }) => theme.background};
 	border-right: 10px solid ${({ theme }) => theme.background};

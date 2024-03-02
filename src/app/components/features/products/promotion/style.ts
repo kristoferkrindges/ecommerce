@@ -11,7 +11,7 @@ export const Card = styled.article`
 	/* width: 300px; */
 	width: 36rem;
 	height: 42rem;
-	background-color: white;
+	/* background-color: black; */
 
 	/* &:hover {
 		box-shadow: 0 0.5rem 1rem black;
@@ -41,7 +41,8 @@ export const ProductName = styled.p`
 export const CardPrecis = styled.div`
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	/* justify-content: space-between; */
+	justify-content: center;
 	align-items: center;
 	svg {
 		font-size: 1.5rem;

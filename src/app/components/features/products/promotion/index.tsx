@@ -35,12 +35,12 @@ export default function PromotionCard({
 				<ProductName>{name}</ProductName>
 			</CardName>
 			<CardPrecis>
-				<FavIcon />
+				{/* <FavIcon /> */}
 				<PricesContainer>
 					<PriceBefore>${before}</PriceBefore>
 					<PriceAfter>${after}</PriceAfter>
 				</PricesContainer>
-				<CartIcon />
+				{/* <CartIcon /> */}
 			</CardPrecis>
 		</Card>
 	);

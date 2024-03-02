@@ -17,6 +17,9 @@ import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 import PromotionCard from "../features/products/promotion";
 import { ArrowBack, ArrowForward } from "@/app/icons/IO5";
 
+import Adidas from "../../assets/images/adidas.png";
+import Nike from "../../assets/images/nike.png";
+
 interface SwipperSliderProps {
 	image: string;
 }
@@ -47,7 +50,7 @@ export default function SwipperSlider({ image }: SwipperSliderProps) {
 			>
 				<SwiperSlide>
 					<PromotionCard
-						image={"https://imgcentauro-a.akamaihd.net/768x768/96274331.jpg"}
+						image={Nike.src}
 						name={"Nike collection"}
 						before={"159.00"}
 						after={"99.99"}
@@ -55,9 +58,15 @@ export default function SwipperSlider({ image }: SwipperSliderProps) {
 				</SwiperSlide>
 				<SwiperSlide>
 					<PromotionCard
-						image={
-							"https://cdn.bnws3.com.br/b2online.com.br/image/cache/data/produtos/adidas/unissex/camisa-adidas-fortore-23-infantil-branco---preto-8410-23-06-20-1200x1200.jpg"
-						}
+						image={Adidas.src}
+						name={"Adidas collection"}
+						before={"139.00"}
+						after={"89.99"}
+					/>
+				</SwiperSlide>
+				<SwiperSlide>
+					<PromotionCard
+						image={Nike.src}
 						name={"Nike collection"}
 						before={"159.00"}
 						after={"99.99"}
@@ -65,15 +74,7 @@ export default function SwipperSlider({ image }: SwipperSliderProps) {
 				</SwiperSlide>
 				<SwiperSlide>
 					<PromotionCard
-						image={"https://imgcentauro-a.akamaihd.net/768x768/96274331.jpg"}
-						name={"Nike collection"}
-						before={"159.00"}
-						after={"99.99"}
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<PromotionCard
-						image={"https://imgcentauro-a.akamaihd.net/768x768/96274331.jpg"}
+						image={Nike.src}
 						name={"Nike collection"}
 						before={"159.00"}
 						after={"99.99"}

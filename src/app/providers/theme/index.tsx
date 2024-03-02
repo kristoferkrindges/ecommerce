@@ -5,10 +5,8 @@ import { darkTheme, lightTheme } from "../../styles/theme";
 import { GlobalStyle } from "../../styles/global";
 import { LanguageProvider } from "../../contexts/language";
 import { DarkModeProvider } from "../../contexts/darkmode";
-import TopSideMenu from "@/app/components/menus/topside";
-import TopSideMenuTeste from "@/app/components/menus/topside/topside";
-import PromotionCard from "@/app/components/features/products/promotion";
 import HomeTemplate from "@/app/templates/home";
+import TopSideMenu from "@/app/components/menus/topside";
 
 interface ThemeContextProps {
 	setTheme: React.Dispatch<React.SetStateAction<string>>;
@@ -37,7 +35,7 @@ export default function ThemeProvider() {
 				<GlobalStyle />
 				<LanguageProvider>
 					<DarkModeProvider>
-						<TopSideMenuTeste />
+						<TopSideMenu />
 						<HomeTemplate image={""} />
 						{/* Routes */}
 					</DarkModeProvider>

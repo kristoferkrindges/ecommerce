@@ -1,24 +1,31 @@
 import React from "react";
 
 import {
-	ContainerSideTop,
-	LeftSideTop,
-	Title,
-	MidSideTop,
-	RightSideTop,
+	Nav,
+	Container,
+	Log,
+	OptionsIcons,
+	NumberContainer,
+	CountNumber,
 } from "./style";
-import SearchBar from "../../inputs/searchbar";
+import NewSearch from "../../inputs/newsearch";
+import { CartIcon, FavIcon, MenuIcon } from "@/app/icons/IO5";
 
 export default function TopSideMenu() {
 	return (
-		<ContainerSideTop>
-			<LeftSideTop>
-				<Title>Ecommerce</Title>
-			</LeftSideTop>
-			<MidSideTop>
-				<SearchBar />
-			</MidSideTop>
-			<RightSideTop></RightSideTop>
-		</ContainerSideTop>
+		<Nav>
+			<Container>
+				<Log>MoreSale</Log>
+				<NewSearch />
+				<OptionsIcons>
+					<FavIcon />
+					<NumberContainer>
+						<CountNumber>2</CountNumber>
+						<CartIcon />
+					</NumberContainer>
+					<MenuIcon />
+				</OptionsIcons>
+			</Container>
+		</Nav>
 	);
 }
