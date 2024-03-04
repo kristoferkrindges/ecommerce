@@ -1,18 +1,9 @@
-import React from "react";
-
-import { MainContainer, SecondaryContainer } from "./style";
 import PromotionSection from "./promotionSection";
 
-interface HomeTemplateProps {
-	image: string;
-}
-
-export default function HomeTemplate({}: HomeTemplateProps) {
+export default function HomeTemplate() {
 	return (
-		<MainContainer>
-			<SecondaryContainer>
-				<PromotionSection image={""} />
-			</SecondaryContainer>
-		</MainContainer>
+		<>
+			<PromotionSection image={""} />
+		</>
 	);
 }

@@ -1,4 +1,5 @@
 import StyledComponentsRegistry from "@/lib/registry";
+import ThemeProvider from "./providers/theme";
 
 export const metadata = {
 	title: "Ecommerce",
@@ -26,7 +27,9 @@ export default function RootLayout({
 				<link rel="icon" href="/kristofer.ico" sizes="any" />
 			</head>
 			<body>
-				<StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+				<StyledComponentsRegistry>
+					<ThemeProvider>{children}</ThemeProvider>
+				</StyledComponentsRegistry>
 			</body>
 		</html>
 	);

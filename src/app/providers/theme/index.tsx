@@ -5,8 +5,8 @@ import { darkTheme, lightTheme } from "../../styles/theme";
 import { GlobalStyle } from "../../styles/global";
 import { LanguageProvider } from "../../contexts/language";
 import { DarkModeProvider } from "../../contexts/darkmode";
-import HomeTemplate from "@/app/templates/home";
 import TopSideMenu from "@/app/components/menus/topside";
+import InitialsTemplate from "@/app/templates/initials";
 
 interface ThemeContextProps {
 	setTheme: React.Dispatch<React.SetStateAction<string>>;
@@ -15,7 +15,11 @@ interface ThemeContextProps {
 
 export const ThemeContext = createContext<ThemeContextProps | null>(null);
 
-export default function ThemeProvider() {
+export default function ThemeProvider({
+	children,
+}: {
+	children: React.ReactNode;
+}) {
 	const [theme, setTheme] = useState("light");
 	useEffect(() => {
 		if (typeof window !== "undefined") {
@@ -36,8 +40,7 @@ export default function ThemeProvider() {
 				<LanguageProvider>
 					<DarkModeProvider>
 						<TopSideMenu />
-						<HomeTemplate image={""} />
-						{/* Routes */}
+						<InitialsTemplate>{children}</InitialsTemplate>
 					</DarkModeProvider>
 				</LanguageProvider>
 			</ThemeStyle>

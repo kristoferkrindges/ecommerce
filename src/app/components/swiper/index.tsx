@@ -16,15 +16,13 @@ import "swiper/css/navigation";
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 import PromotionCard from "../features/products/promotion";
 import { ArrowBack, ArrowForward } from "@/app/icons/IO5";
+import { ProductType } from "@/app/types/ProductType";
 
-import Adidas from "../../assets/images/adidas.png";
-import Nike from "../../assets/images/nike.png";
-
-interface SwipperSliderProps {
-	image: string;
-}
-
-export default function SwipperSlider({ image }: SwipperSliderProps) {
+export default function SwipperSlider({
+	products,
+}: {
+	products: ProductType[];
+}) {
 	return (
 		<SwiperContainer>
 			<Swiper
@@ -48,48 +46,11 @@ export default function SwipperSlider({ image }: SwipperSliderProps) {
 				modules={[EffectCoverflow, Pagination, Navigation]}
 				className="swiperContainer"
 			>
-				<SwiperSlide>
-					<PromotionCard
-						image={Nike.src}
-						name={"Nike collection"}
-						before={"159.00"}
-						after={"99.99"}
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<PromotionCard
-						image={Adidas.src}
-						name={"Adidas collection"}
-						before={"139.00"}
-						after={"89.99"}
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<PromotionCard
-						image={Nike.src}
-						name={"Nike collection"}
-						before={"159.00"}
-						after={"99.99"}
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<PromotionCard
-						image={Nike.src}
-						name={"Nike collection"}
-						before={"159.00"}
-						after={"99.99"}
-					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<PromotionCard
-						image={
-							"https://images.tcdn.com.br/img/img_prod/1034143/camiseta_adidas_masculina_essentials_big_logo_hl2249_323_variacao_1471_1_35602522179b46ae5e1f082a37b5ed97.jpg"
-						}
-						name={"Nike collection"}
-						before={"159.00"}
-						after={"99.99"}
-					/>
-				</SwiperSlide>
+				{products.map((product: ProductType) => (
+					<SwiperSlide key={product.id}>
+						<PromotionCard product={product} />
+					</SwiperSlide>
+				))}
 				<SliderController>
 					<SwiperButtonPrev className="swiperButtonPrev">
 						<ArrowBack />
