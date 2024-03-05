@@ -5,7 +5,6 @@ import SwipperSlider from "@/app/components/swiper";
 import { PrimaryButton } from "@/app/styles/buttons/primaryButton.styled";
 import Adidas from "../../../assets/images/adidas.png";
 import Nike from "../../../assets/images/nike.png";
-import { ProductType } from "@/app/types/ProductType";
 
 export default function PromotionSection() {
 	const products = [

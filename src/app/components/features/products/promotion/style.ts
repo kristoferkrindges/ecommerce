@@ -26,11 +26,6 @@ export const CardImage = styled.div`
 	padding: 1.5rem 0;
 `;
 
-export const ProductImage = styled.img`
-	max-width: 100%;
-	height: auto;
-`;
-
 export const CardName = styled.div``;
 
 export const ProductName = styled.p`

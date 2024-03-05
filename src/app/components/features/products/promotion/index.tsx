@@ -3,7 +3,6 @@ import React from "react";
 import {
 	Card,
 	CardImage,
-	ProductImage,
 	CardName,
 	ProductName,
 	CardPrecis,
@@ -13,6 +12,7 @@ import {
 } from "./style";
 import { CartIcon, FavIcon } from "@/app/icons/IO5";
 import { ProductType } from "@/app/types/ProductType";
+import ProductImage from "@/app/components/images/productImage";
 
 type ProductProps = {
 	product: ProductType;
@@ -22,7 +22,8 @@ export default function PromotionCard({ product }: ProductProps) {
 	return (
 		<Card>
 			<CardImage>
-				<ProductImage src={product.image} />
+				{/* <ProductImage src={product.image} /> */}
+				<ProductImage product={product} />
 			</CardImage>
 			<CardName>
 				<ProductName>{product.title}</ProductName>
