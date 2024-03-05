@@ -1,5 +1,10 @@
-import InitialsTemplate from "./templates/initials";
+"use client";
+import HomeTemplate from "./templates/home";
 
-export default function Initials() {
-	return <InitialsTemplate />;
+export default function Home() {
+	return (
+		<>
+			<HomeTemplate />
+		</>
+	);
 }
