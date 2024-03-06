@@ -1,15 +1,9 @@
 import React from "react";
 
-import {
-	Nav,
-	Container,
-	Log,
-	OptionsIcons,
-	NumberContainer,
-	CountNumber,
-} from "./style";
+import { Nav, Container, Log, OptionsIcons } from "./style";
 import NewSearch from "../../inputs/newsearch";
-import { CartIcon, FavIcon, MenuIcon } from "@/app/icons/IO5";
+import { MenuIcon } from "@/app/icons/IO5";
+import SignedInButtons from "../../buttons/signedIn";
 
 export default function TopSideMenu() {
 	return (
@@ -18,11 +12,7 @@ export default function TopSideMenu() {
 				<Log>MoreSale</Log>
 				<NewSearch />
 				<OptionsIcons>
-					<FavIcon />
-					<NumberContainer>
-						<CountNumber>2</CountNumber>
-						<CartIcon />
-					</NumberContainer>
+					<SignedInButtons />
 					<MenuIcon />
 				</OptionsIcons>
 			</Container>

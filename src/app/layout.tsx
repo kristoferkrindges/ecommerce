@@ -1,5 +1,6 @@
 import StyledComponentsRegistry from "@/lib/registry";
 import ThemeProvider from "./providers/theme";
+import { ClerkProvider } from "@clerk/nextjs";
 
 export const metadata = {
 	title: "Ecommerce",
@@ -28,7 +29,9 @@ export default function RootLayout({
 			</head>
 			<body>
 				<StyledComponentsRegistry>
-					<ThemeProvider>{children}</ThemeProvider>
+					<ClerkProvider>
+						<ThemeProvider>{children}</ThemeProvider>
+					</ClerkProvider>
 				</StyledComponentsRegistry>
 			</body>
 		</html>
