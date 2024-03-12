@@ -1,4 +1,4 @@
-import StyledComponentsRegistry from "@/lib/registry";
+import StyledComponentsRegistry from "./lib/styledComponents/registry";
 import ThemeProvider from "./providers/theme";
 import { ClerkProvider } from "@clerk/nextjs";
 
