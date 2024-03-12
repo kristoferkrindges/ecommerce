@@ -9,7 +9,7 @@ export const PrimaryButton = styled.button`
 	border-radius: 2rem;
 	cursor: pointer;
 	transition: all 300ms ease;
-	background-color: ${({ theme }) => theme.containerInverse};
+	background-color: ${({ theme }) => theme.secondColor};
 	color: ${({ theme }) => theme.textInverse};
 	font-size: 1rem;
 	transition: 0.5s;

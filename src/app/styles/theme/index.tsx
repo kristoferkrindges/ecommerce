@@ -5,7 +5,7 @@ export const lightTheme = {
 	text: "hsl(252, 30%, 10%)",
 	textInverse: "hsl(252, 30%, 100%)",
 	bottom: "rgba(249, 249, 249, 255)",
-	secondColor: "#565564",
+	secondColor: "#0d33bf",
 };
 export const darkTheme = {
 	container: "black",
@@ -14,5 +14,6 @@ export const darkTheme = {
 	text: "hsl(252, 30%, 100%)",
 	textInverse: "hsl(252, 30%, 10%)",
 	bottom: "hsl(210, 3%, 15%)",
-	secondColor: "#565564",
+	secondColor: "#0d33bf",
 };
+// #0d33bf
